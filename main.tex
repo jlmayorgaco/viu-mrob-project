@@ -54,6 +54,8 @@
 
 \chapter{Resumen del proyecto}
 
+\section*{ELABORAR RESUMEN DEL PROYECTO}
+
 \section{Título}
 
 Desarrollo de un gemelo digital para un sistema de manipulación móvil mediante la integración del robot \textbf{ABB IRB 120} y la plataforma omnidireccional \textbf{KUKA Omnirob} en un entorno virtual.
@@ -66,7 +68,7 @@ El desarrollo del proyecto se divide en tres fases técnico-metodológicas funda
 
 A través de esta integración, la plataforma permitirá realizar la programación y validación en tiempo real de trayectorias, análisis cinemáticos y rutinas de manipulación industrial en un entorno virtual controlado. Con esto se logra una equivalencia funcional a la experiencia de un laboratorio físico, proporcionando a los estudiantes una herramienta pedagógica de última generación que cierra la brecha entre la teoría matemática y la operación robótica real bajo los paradigmas de la Industria 4.0.
 
-\chapter{Objetivos}
+\chapter{Objetivos y específicos}
 
 \section{Objetivo general}
 
@@ -176,7 +178,7 @@ Al finalizar el proyecto de investigación, se contempla la obtención de los si
 \begin{itemize}
   \item \textbf{Modelo CAD paramétrico optimizado:} Un ensamblaje virtual tridimensional completo y fidedigno del robot ABB IRB 120 en SolidWorks. Este modelo contará con la distribución de masa, centros de gravedad y simplificación de mallas geométricas necesarias para una exportación limpia y eficiente hacia el entorno de simulación sin pérdida de fidelidad visual.
   \item \textbf{Algoritmo cinemático validado y documentado:} Un marco matemático analítico consolidado para el control del manipulador. Esto incluye la correcta formulación de la tabla de parámetros Denavit-Hartenberg para la cinemática directa y la resolución matemática programada para la cinemática inversa, ambas estructuradas y verificadas mediante scripts reproducibles en Jupyter Notebook.
-  \item \textbf{Gemelo digital interactivo y funcional:} Una escena centralizada en CoppeliaSim que integre la geometría del brazo importado, el modelo base del KUKA Omnirob y los algoritmos matemáticos en Python. El sistema robótico virtual responderá en tiempo real a consignas de posición cartesianas globales, coordinando de manera automática el desplazamiento del vehículo y la orientación del manipulador de acuerdo con los límites físicos de ambos fabricantes.
+  \item \textbf{Gemelo digital interactivo y funcional:} na escena centralizada en CoppeliaSim que integre la geometría del brazo importado, el modelo base del KUKA Omnirob y los algoritmos matemáticos en Python. El sistema robótico virtual responderá en tiempo real a consignas de posición cartesianas globales, coordinando de manera automática el desplazamiento del vehículo y la orientación del manipulador de acuerdo con los límites físicos de ambos fabricantes.
   \item \textbf{Entorno virtual de experimentación seguro:} Una plataforma informática que sirva como herramienta de estudio controlada para la evaluación de trayectorias complejas, algoritmos de navegación y estrategias de control aplicadas a manipuladores móviles autónomos. Este entorno mitiga el riesgo de daños en costosos equipos reales y elimina las barreras económicas de acceso a hardware de robótica móvil avanzada en la enseñanza superior.
   \item \textbf{Reporte técnico de discrepancia y precisión:} Un análisis cuantitativo final que evalúe el desempeño integral del gemelo digital. A través de la simulación de trayectorias combinadas de navegación y manipulación, se generarán gráficas de error cinemático y desviación, demostrando la convergencia y estabilidad entre los cálculos teóricos de Python y los movimientos ejecutados por el modelo acoplado en CoppeliaSim.
 \end{itemize}
@@ -188,7 +190,7 @@ A continuación, se presenta el esquema metodológico y de arquitectura de softw
 \begin{figure}[H]
   \centering
   \includegraphics[width=4.72441in,height=3.58668in]{figures/image1.png}
-  \caption{Esquema de arquitectura del desarrollo del gemelo digital.}
+  \caption*{\textbf{Figura 1.} Esquema de arquitectura del desarrollo del gemelo digital}
 \end{figure}
 
 El gráfico ilustra la interacción entre las tres plataformas tecnológicas del proyecto, adaptadas para un sistema de manipulación móvil unificado. El proceso inicia en \textbf{SolidWorks}, donde se realiza el desglose geométrico y paramétrico de los eslabones del manipulador ABB IRB 120 para su posterior exportación. En paralelo, en \textbf{Jupyter Notebook}, se realiza el modelado matemático empleando el algoritmo cinemático de Denavit-Hartenberg (D-H) y la resolución de la cinemática inversa.
@@ -198,19 +200,19 @@ Ambos bloques convergen en \textbf{CoppeliaSim} a través de una interfaz de pro
 \begin{figure}[H]
   \centering
   \includegraphics[width=1.9685in,height=2.24886in]{figures/image2.png}
-  \caption{Modelo tridimensional del robot industrial ABB IRB 120.}
+  \caption*{\textbf{Figura 2.} Modelo tridimensional del robot industrial ABB IRB 120.}
 \end{figure}
 
 \begin{figure}[H]
   \centering
   \includegraphics[width=1.9685in,height=2.07927in]{figures/image3.png}
-  \caption{Configuración de ejes, grados de libertad y sentidos de rotación del robot ABB IRB 120.}
+  \caption*{\textbf{Figura 3.} Configuración de ejes, grados de libertad y sentidos de rotación del robot ABB IRB 120.}
 \end{figure}
 
 \begin{figure}[H]
   \centering
   \includegraphics[width=3.54331in,height=2.08471in]{figures/image4.jpeg}
-  \caption{Ejemplo de sistema de manipulación móvil integrado KUKA Omnirob con brazo manipulador.}
+  \caption*{\textbf{Figura 4.} Ejemplo de sistema de manipulación móvil integrado KUKA Omnirob con brazo manipulador.}
 \end{figure}
 
 \end{document}
